@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/f8d1b1ce75.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container1">
+        <div class="display">
+            <i class="fa-solid fa-sliders" onclick="display()" id="show"></i>
+            <i class="fa-solid fa-circle-xmark" onclick="escape()" id="hide"></i>
+        </div>
+        <h1>Image editor</h1>
+    </div>
+    <div class="container">
+        <div class="left" id="left">
+            <form action="">
+                <div class="filter">
+                    <label for="bright">brightness</label>
+                    <input type="range" name="bright" id="bright" min="0" max="200" value="100" class="slider" onchange="slider();">
+                </div>
+                <div class="filter">
+                    <label for="contrast">contrast</label>
+                    <input type="range" name="contrast" id="contrast" min="0" max="200" value="100" class="slider" onchange="slider();">
+                </div>
+                <div class="filter">
+                    <label for="saturate">saturate</label>
+                    <input type="range" name="saturate" id="saturate" min="0" max="200" value="100" class="slider" onchange="slider();">
+                </div>
+                <div class="filter">
+                    <label for="gray">grayscale</label>
+                    <input type="range" name="grayscale" id="gray" min="" max="100" value="0" class="slider" onchange="slider();">
+                </div>
+                <div class="filter">
+                    <label for="gray">invert</label>
+                    <input type="range" name="invert" id="invert" min="" max="100" value="0" class="slider" onchange="slider();">
+                </div>
+                <div class="filter">
+                    <label for="blur">blur</label>
+                    <input type="range" name="blur" id="blur" min="" max="100" value="0" class="slider" onchange="slider();">
+                </div>
+                <div class="filter">
+                    <label for="hue">hue rotate</label>
+                    <input type="range" name="hue-rotate" id="hue" min="" max="360" value="0" class="slider" onchange="slider();">
+                </div>
+                <div class="filter">
+                    <label for="sepia">sepia</label>
+                    <input type="range" name="sepia" id="sepia" min="" max="100" value="0" class="slider" onchange="slider();">
+                </div>
+                <input type="reset" value="reset" id="reset" >
+            </form>
+        </div>
+        <div class="right" id="right">
+            <!-- <form action="" onsubmit="formsubmit()"> -->
+                <input type="text" name="" id="input" placeholder="enter picture url" />
+                    <button type="submit" id="btn" onclick="submit()">change image</button>
+            <!-- </form> -->
+            <div>
+                <img src="ali.jpg" alt="" id="img" width="500px" height="500px">
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

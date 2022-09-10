@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    padding: 10px;
+}
+h1{
+    font-size: 30px;
+    width: 90%;
+    text-align: center;
+    color: white;
+}
+.display{
+    width: 10%;
+}
+i{
+    font-size: 30px;
+    color: white;
+}
+i:hover{
+    cursor: pointer;
+}
+.container{
+    width:100%;
+    /* height:80vh; */
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    width:30%;
+    border: 2px solid black;
+    min-height: 100vh;
+    background-color: purple;
+}
+.right{
+    width:70%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.filter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.filter label{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.filter input{
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width:95%;
+}
+img{
+    object-fit: cover;
+    max-width: 100%;
+}
+#reset{
+    margin: 10px auto;
+    display: block;
+    padding: 15px 45px;
+    text-align: center;
+    background-size: 200% auto;
+    color: rgb(3, 3, 3);            
+    box-shadow: 0 0 20px rgb(24, 22, 22);
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: red;
+}
+
+ 
+.slider {
+-webkit-appearance: none;
+width: 100%;
+height: 15px;
+border-radius: 5px;  
+background: #d3d3d3;
+outline: none;
+opacity: 0.7;
+-webkit-transition: .2s;
+transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 25px;
+height: 25px;
+border-radius: 50%; 
+background: #04AA6D;
+cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+width: 25px;
+height: 25px;
+border-radius: 50%;
+background: #04AA6D;
+cursor: pointer;
+}
+input[type="text"]{
+padding: 10px;
+outline: none;
+border:none;
+border-bottom:2px solid blue;
+margin-bottom: 5px;
+width:40%;
+} #btn{
+padding:10px;
+cursor: pointer;
+font-size: 20px;
+border: 2px solid black;
+background: #3498db;
+box-shadow: 0 0 20px rgb(24, 22, 22);
+}
+#hide{
+display: none;
+}
